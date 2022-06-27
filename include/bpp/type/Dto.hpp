@@ -11,7 +11,7 @@
 namespace bpp {
     namespace type {
         class Dto {
-        protected:
+        public:
             std::map<std::string, std::string> map;
 
             template<class T>

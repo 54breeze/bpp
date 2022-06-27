@@ -2,8 +2,8 @@
 // Created by Administrator on 2022/6/20.
 //
 
-#ifndef BPP_JSONCLASSDEFINE_HPP
-#define BPP_JSONCLASSDEFINE_HPP
+#ifndef BPP_TYPEDEFINE_HPP
+#define BPP_TYPEDEFINE_HPP
 
 #include "bpp/type/Dto.hpp"
 #include <memory>
@@ -18,4 +18,4 @@ public:                     \
     Type Value = addValue<Type>(#Type, #Value);
 
 
-#endif //BPP_JSONCLASSDEFINE_HPP
+#endif //BPP_TYPEDEFINE_HPP
