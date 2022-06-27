@@ -1,0 +1,25 @@
+//
+// Created by Administrator on 2022/6/21.
+//
+
+#ifndef BPP_DTO_HPP
+#define BPP_DTO_HPP
+
+#include <map>
+#include <string>
+
+namespace bpp {
+    namespace type {
+        class Dto {
+        protected:
+            std::map<std::string, std::string> map;
+
+            template<class T>
+            T addValue(const std::string &type, const std::string &name);
+
+        };
+    }
+    typedef bpp::type::Dto Dto;
+}
+
+#endif //BPP_DTO_HPP
