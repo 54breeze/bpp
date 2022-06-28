@@ -11,7 +11,7 @@
 namespace bpp {
     namespace type {
         class Dto {
-        public:
+        protected:
             std::map<std::string, std::string> map;
 
             template<class T>
@@ -19,7 +19,6 @@ namespace bpp {
                 map[name] = type;
                 return T();
             }
-
         };
     }
     typedef bpp::type::Dto Dto;
