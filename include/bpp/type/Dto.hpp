@@ -15,7 +15,10 @@ namespace bpp {
             std::map<std::string, std::string> map;
 
             template<class T>
-            T addValue(const std::string &type, const std::string &name);
+            T addValue(const std::string &type, const std::string &name) {
+                map[name] = type;
+                return T();
+            }
 
         };
     }
