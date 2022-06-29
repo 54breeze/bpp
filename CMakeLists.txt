@@ -10,11 +10,13 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 add_library(${PROJECT_NAME}
         include/bpp/type/TypeDefine.hpp
         include/bpp/type/TypeUndef.hpp
-        include/bpp/codegen/Codegen.hpp
+        include/bpp/plugins/PluginSelector.hpp
         include/bpp/type/Dto.cpp
         include/bpp/type/Dto.hpp
         include/bpp/parser/json/Util.cpp
         include/bpp/parser/json/Util.hpp
+        include/bpp/plugins/codegen/Codegen.hpp
+        include/bpp/plugins/parser/Parser.hpp
         )
 
 target_include_directories(${PROJECT_NAME} PUBLIC include)
@@ -23,6 +25,7 @@ target_include_directories(${PROJECT_NAME} PUBLIC include)
 add_library(${PROJECT_NAME}-lib
         src/dto/UserDto.cpp
         src/dto/UserDto.hpp
+        src/plugin/PluginsSet.hpp
         )
 
 target_link_libraries(${PROJECT_NAME}-lib PUBLIC ${PROJECT_NAME})

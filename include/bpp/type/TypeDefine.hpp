@@ -9,9 +9,14 @@
 #include <memory>
 
 #define DTO_INIT(ClassName) \
+friend bpp::Util;           \
 public:                     \
     static std::shared_ptr<ClassName> creatShared() { \
         return std::make_shared<ClassName>();         \
+    }                       \
+                            \
+    std::string dateToString() override{ \
+        return bpp::Util::dateToString(this->map);                 \
     }
 
 #define DTO_VARIABLE(Type, Value) \

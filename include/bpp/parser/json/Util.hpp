@@ -5,11 +5,18 @@
 #ifndef BPP_UTIL_HPP
 #define BPP_UTIL_HPP
 
+#include <map>
+#include <string>
+
 namespace bpp {
     namespace parser {
         namespace json {
             class Util {
-
+            public:
+                template<typename T>
+                static std::string dateToString(std::map<std::string, std::string> &date) {
+                    return date.begin()->second;
+                }
             };
         }
     }
