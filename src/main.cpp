@@ -7,7 +7,7 @@
 
 int main(int argc, char *argv[]) {
     std::shared_ptr<UserDto> a = UserDto::creatShared();
-    a->userId = 3;
+    a->userId = 19236;
     a->num = 5.6;
     std::cout << a->userId << std::endl;
     std::cout << a->num << std::endl;

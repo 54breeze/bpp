@@ -5,6 +5,12 @@
 #ifndef BPP_DTO_HPP
 #define BPP_DTO_HPP
 
+#ifdef BPP_CODEGEN_DEFINE_DTO_JSON
+
+#include BPP_CODEGEN_DTO_JSON
+
+#endif
+
 #include <map>
 #include <string>
 
@@ -13,6 +19,7 @@ namespace bpp {
         class Dto {
         protected:
             std::map<std::string, std::string> map;
+            bpp::Util util;
 
             template<class T>
             T addValue(const std::string &type, const std::string &name) {
