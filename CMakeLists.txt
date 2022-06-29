@@ -13,8 +13,8 @@ add_library(${PROJECT_NAME}
         include/bpp/codegen/Codegen.hpp
         include/bpp/type/Dto.cpp
         include/bpp/type/Dto.hpp
-        include/bpp/parser/json/JsonUtil.cpp
-        include/bpp/parser/json/JsonUtil.hpp
+        include/bpp/parser/json/Util.cpp
+        include/bpp/parser/json/Util.hpp
         )
 
 target_include_directories(${PROJECT_NAME} PUBLIC include)
