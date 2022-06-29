@@ -16,7 +16,7 @@ public:                     \
     }                       \
                             \
     std::string dateToString() override{ \
-        return bpp::Util::dateToString(this->map);                 \
+        return bpp::Util::dateToString(this->map);    \
     }
 
 #define DTO_VARIABLE(Type, Value) \

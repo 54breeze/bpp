@@ -13,9 +13,8 @@ namespace bpp {
         namespace json {
             class Util {
             public:
-                template<typename T>
                 static std::string dateToString(std::map<std::string, std::string> &date) {
-                    return date.begin()->second;
+                    return date.begin()->first;
                 }
             };
         }
